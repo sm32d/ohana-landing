@@ -1,0 +1,128 @@
+.ohana__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.ohana__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.ohana__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.ohana__header-content p {
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+
+.ohana__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.ohana__header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    background: var(--color-footer);
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ohana__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 27px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #ff4820;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.ohana__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ohana__header-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .ohana__header {
+        flex-direction: column;
+    }
+
+    .ohana__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ohana__header h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .ohana__header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ohana__header-content__input input,
+    .ohana__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .ohana__header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .ohana__header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .ohana__header-content__input input,
+    .ohana__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
