@@ -1,0 +1,18 @@
+.ohana__footer {
+    color: white;
+    padding: 2rem 6rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+}
+
+.ohana__footer p {
+    font-family: var(--font-family);
+    margin-bottom: 0.5rem;
+}
+
+.ohana__footer-copyright {
+    color: var(--color-text);
+}

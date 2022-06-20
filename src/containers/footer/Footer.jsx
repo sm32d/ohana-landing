@@ -3,7 +3,10 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div className='ohana__footer'>
+            <p>Made with ❤️ in Singapore</p>
+            <p className='ohana__footer-copyright'>&#169; 2022 | All Rights Reserved</p>
+        </div>
     )
 }
 
