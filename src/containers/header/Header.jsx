@@ -12,10 +12,10 @@ const Header = () => {
                 <p>A cloud-native file storage solution that is secure, scalable,
                     resilient, and built for the sharing economy of today.</p>
                 <p>Releasing this Autumn!</p>
-                <div className='ohana__header-content__input'>
+                <form name="mailing-list" method="POST" data-netlify="true" className='ohana__header-content__input'>
                     <input type="email" placeholder="Your email address" />
                     <button type='button'>Get Notified</button>
-                </div>
+                </form>
             </div>
             <div className='ohana__header-image'>
                 <img src={hero} alt='screenshot of ohana files' />

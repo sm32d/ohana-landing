@@ -11,7 +11,6 @@ stored in the system are securely distributed across several nodes in shards tha
             </div>
             <div className='ohana__whatOhana-heading'>
                 <h1 className='gradient__text'>Built for the modern enterprise</h1>
-                <p>Explore the library</p>
             </div>
             <div className='ohana__whatOhana-container'>
                 <Feature title="Easy Sign-On" text="Ohana fits right into your existing enterprise systems. Just one password for your users to remember." />
