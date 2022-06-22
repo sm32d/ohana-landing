@@ -12,9 +12,9 @@ const Header = () => {
                 <p>A cloud-native file storage solution that is secure, scalable,
                     resilient, and built for the sharing economy of today.</p>
                 <p>Releasing this Autumn!</p>
-                <form name="mailing-list" method="POST" className='ohana__header-content__input' netlify>
-                    <input name="email" type="email" placeholder="Your email address" />
-                    <button type='submit'>Get Notified</button>
+                <form action="https://www.getrevue.co/profile/sm32d/add_subscriber" method="post" id="revue-form" name="revue-form" className='ohana__header-content__input'>
+                    <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
+                    <button type='submit' value="Subscribe" name="member[subscribe]" id="member_submit">Get Notified</button>
                 </form>
             </div>
             <div className='ohana__header-image'>
