@@ -24,7 +24,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='ohana__navbar-download'>
-                <button type='button'>Download</button>
+                <button type='button'>Pre-Register</button>
             </div>
             <div className='ohana__navbar-menu'>
                 {toggleMenu
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className='ohana__navbar-menu_container-links'>
                             <Menu />
                             <div className='ohana__navbar-menu_container-links-download'>
-                                <button type='button'>Download</button>
+                                <button type='button'>Pre-Register</button>
                             </div>
                         </div>
                     </div>

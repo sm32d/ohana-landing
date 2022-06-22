@@ -5,11 +5,11 @@ const CTA = () => {
     return (
         <div className='ohana__cta'>
             <div className='ohana__cta-content'>
-                <p>Request Early Access to Get Started</p>
-                <h3>Register today and start exploring the endless possibilities</h3>
+                <p>Be one of the first to enjoy our services.</p>
+                <h3>Register now and get notified of our release!</h3>
             </div>
             <div className='ohana__cta-btn'>
-                <button type='button'>Get Started</button>
+                <a href="#home"><button type='button'>Register</button></a>
             </div>
         </div>
     )

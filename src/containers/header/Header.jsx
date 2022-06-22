@@ -9,10 +9,12 @@ const Header = () => {
                 <h1 className='gradient__text'>
                     Store and Share Your Files Securely with Ohana
                 </h1>
-                <p>Veritatis voluptatem ratione ipsa est atque ipsum eveniet optio. Nihil minima sed qui quas voluptatum enim rerum. Aspernatur eum rerum architecto harum velit.</p>
+                <p>A cloud-native file storage solution that is secure, scalable,
+                    resilient, and built for the sharing economy of today.</p>
+                <p>Releasing this Autumn!</p>
                 <div className='ohana__header-content__input'>
                     <input type="email" placeholder="Your email address" />
-                    <button type='button'>Get Started</button>
+                    <button type='button'>Get Notified</button>
                 </div>
             </div>
             <div className='ohana__header-image'>

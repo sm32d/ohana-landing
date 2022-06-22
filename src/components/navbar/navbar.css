@@ -19,7 +19,8 @@
 }
 
 .ohana__navbar-links_logo h1 {
-    font-size: larger;
+    font-size: x-large;
+    font-family: var(--font-family);
 }
 
 .ohana__navbar-links_container {
