@@ -9,7 +9,7 @@
 .ohana__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -28,14 +28,7 @@
     flex-direction: row;
 }
 
-.ohana__navbar-download {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 .ohana__navbar-links_container p,
-.ohana__navbar-download p,
 .ohana__navbar-menu_container p {
     color: #fff;
     font-family: var(--font-family);
@@ -48,7 +41,6 @@
     cursor: pointer;
 }
 
-.ohana__navbar-download button,
 .ohana__navbar-menu_container button {
     padding: 0.5rem 1rem;
     color: #fff;
@@ -94,10 +86,6 @@
     margin: 1rem 0;
 }
 
-.ohana__navbar-menu_container-links-download {
-    display: none;
-}
-
 @media screen and (max-width: 1050px) {
     .ohana__navbar-links_container {
         display: none;
@@ -119,15 +107,7 @@
         padding: 2rem;
     }
 
-    .ohana__navbar-download {
-        display: none;
-    }
-
     .ohana__navbar-menu_container {
         top: 20px;
-    }
-
-    .ohana__navbar-menu_container-links-download {
-        display: block;
     }
 }

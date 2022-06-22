@@ -1,6 +1,7 @@
 .ohana__whatOhana {
     display: flex;
     flex-direction: column;
+    border-radius: 1.5rem;
 
     padding: 2rem;
     background: var(--color-footer);

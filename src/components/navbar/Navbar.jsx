@@ -23,9 +23,6 @@ const Navbar = () => {
                     <Menu />
                 </div>
             </div>
-            <div className='ohana__navbar-download'>
-                <button type='button'>Pre-Register</button>
-            </div>
             <div className='ohana__navbar-menu'>
                 {toggleMenu
                     ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
@@ -35,9 +32,6 @@ const Navbar = () => {
                     <div className='ohana__navbar-menu_container scale-up-center'>
                         <div className='ohana__navbar-menu_container-links'>
                             <Menu />
-                            <div className='ohana__navbar-menu_container-links-download'>
-                                <button type='button'>Pre-Register</button>
-                            </div>
                         </div>
                     </div>
                 )}
