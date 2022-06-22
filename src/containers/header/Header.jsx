@@ -14,7 +14,7 @@ const Header = () => {
                 <p>Releasing this Autumn!</p>
                 <form name="mailing-list" method="POST" data-netlify="true" className='ohana__header-content__input'>
                     <input type="email" placeholder="Your email address" />
-                    <button type='button'>Get Notified</button>
+                    <button type='submit'>Get Notified</button>
                 </form>
             </div>
             <div className='ohana__header-image'>
