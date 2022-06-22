@@ -12,7 +12,7 @@ const Header = () => {
                 <p>A cloud-native file storage solution that is secure, scalable,
                     resilient, and built for the sharing economy of today.</p>
                 <p>Releasing this Autumn!</p>
-                <form action="https://www.getrevue.co/profile/sm32d/add_subscriber" method="post" id="revue-form" name="revue-form" className='ohana__header-content__input'>
+                <form action="https://www.getrevue.co/profile/sm32d/add_subscriber" target="_blank" method="post" id="revue-form" name="revue-form" className='ohana__header-content__input'>
                     <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
                     <button type='submit' value="Subscribe" name="member[subscribe]" id="member_submit">Get Notified</button>
                 </form>
