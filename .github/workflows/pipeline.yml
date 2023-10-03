@@ -27,3 +27,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --frozen-lockfile
     - run: yarn run build --if-present
+
+  deploy-netlify:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@v1
+        with:
+          args: deploy --prod # Add any deployment arguments you need
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
