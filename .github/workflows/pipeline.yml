@@ -37,7 +37,7 @@ jobs:
 
       - name: Deploy to Netlify
         run: |
-          netlify login -a "$NETLIFY_AUTH_TOKEN"
+          netlify login
           netlify deploy --site loquacious-lollipop-f317cb --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
