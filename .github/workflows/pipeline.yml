@@ -26,25 +26,25 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --frozen-lockfile
-
-    # Print the current directory
-    - name: Print Current Directory
-      run: |
-        echo "Current directory: $(pwd)"
-        
     - run: yarn run build --if-present
-
-    # Print the directory content
-    - name: Print Current Directory
-      run: |
-        echo "Content: $(ls -ltr)"
+    - name: Archive Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts
+        path: ./build
 
   deploy-netlify:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build-artifacts
+          path: ./build
+          
       - name: Install Netlify CLI
-        run: npm install -g netlify-cli
+        run: yarn global add netlify-cli
 
       - name: Deploy to Netlify
         run: |
