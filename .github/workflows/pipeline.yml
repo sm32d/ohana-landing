@@ -38,6 +38,6 @@ jobs:
       - name: Deploy to Netlify
         run: |
           netlify login
-          netlify deploy --site loquacious-lollipop-f317cb --prod
+          netlify deploy --prod --dir ./build --site loquacious-lollipop-f317cb
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
