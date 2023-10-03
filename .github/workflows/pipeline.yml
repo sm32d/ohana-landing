@@ -26,6 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --frozen-lockfile
+
+    # Print the current directory
+    - name: Print Current Directory
+      run: |
+        echo "Current directory: $(pwd)"
+        
     - run: yarn run build --if-present
 
   deploy-netlify:
